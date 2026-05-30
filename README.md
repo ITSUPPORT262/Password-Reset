@@ -1,2 +1,99 @@
-# Password-Reset
-For a safe Phishing simulation training
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Awareness Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 420px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background: #0078D4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .notice {
+            display: none;
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Account Verification</h2>
+
+    <p>Please verify your email address.</p>
+
+    <input type="email" placeholder="Email Address">
+
+    <button onclick="showMessage()">Verify</button>
+
+    <div class="notice" id="notice">
+        This was is a 3PH IT Cyber Security Awareness Simulation.<br><br>
+
+        No credentials were collected or stored.<br><br>
+
+        Avoid clicking unknown links. Always verify:
+        <br>• Suspicious links
+        <br>• Unexpected emails
+        <br>• Urgent requests
+        <br>• Sender addresses
+        <br><br>
+
+        Be smart, stay alert and report suspicious emails to the IT team.
+    </div>
+
+    <div class="footer">
+        IT Security Awareness
+    </div>
+
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("notice").style.display = "block";
+}
+</script>
+
+</body>
+</html>
